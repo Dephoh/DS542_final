@@ -1,6 +1,17 @@
 # DS542_final
 DS542 Deep Learning final project. Contrastive Learning on IMDb-Faces dataset
 
+# Virtual Environment
+Run the following commands (assumes your are on the Boston University Shared Computing Cluster)
+
+python -m venv simclr_venv
+source simclr_venv/bin/activate
+module load python3/3.12.4
+pip install -r requirements.txt
+python -m ipykernel install --user --name="simclr_venv"
+
+After doing that, make sure you use the simclr_venv as the kernel for all the notebooks
+
 # Data Loading
 There are no scripts for data ingestion, instead go to the following link: [Link to IMDb Dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
 
