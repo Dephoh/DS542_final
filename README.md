@@ -13,7 +13,7 @@ python -m ipykernel install --user --name="simclr_venv"
 After doing that, make sure you use the simclr_venv as the kernel for all the notebooks
 
 # Data Loading
-There are no scripts for data ingestion, instead go to the following link: [Link to IMDb Dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
+There are no scripts for data ingestion, instead go to the following link: [Link to IMDb Dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) I encourage you to read the paper if you haven't already!
 
 This is the original paper for which the IMDb-Faces dataset was created. On that page are two download buttons called "Download images meta data" and "Download faces only (7GB)". Use both to download imdb_meta.tar and imdb_crop.tar respectively.
 
