@@ -165,10 +165,17 @@ def main():
         epoch_pbar.set_postfix({'avg_loss': f'{train_loss:.4f}'})
         #save
         if (epoch + 1) % args.checkpoint_freq == 0:
-            checkpoint_path = os.path.join(f'./simclr_checkpoint_epoch_{epoch+1}.pth')
+            checkpoint_path = os.path.join(f'./simclr_encoder_checkpoint_epoch_{epoch+1}.pth')
             torch.save({
                 'epoch': epoch,
                 'encoder_state_dict': model.encoder.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'loss': train_loss,
+            }, checkpoint_path)
+            checkpoint_path = os.path.join(f'./simclr_model_checkpoint_epoch_{epoch+1}.pth')
+            torch.save({
+                'epoch': epoch,
+                'encoder_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': train_loss,
             }, checkpoint_path)
