@@ -1,4 +1,4 @@
-# DS542_final
+# Embeddings Training Using Contrastive Learning
 DS542 Deep Learning final project. Contrastive Learning on IMDb-Faces dataset
 
 # Virtual Environment
